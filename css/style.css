@@ -643,20 +643,10 @@ body {
   padding-left: 40px;
 }
 
-.form-textfield:focus {
-  border: 1px solid #2196f3;
-}
-
-.form-name {
-  background-image: url(../images/person.svg);
-}
-
-.form-tel {
-  background-image: url(../images/phone.svg);
-}
-
-.form-email {
-  background-image: url(../images/email.svg);
+.form-textfield-icon{
+  position: relative;
+  top: 3px;
+  left: -440px;
 }
 
 .form-label {
@@ -678,6 +668,11 @@ body {
   box-sizing: border-box;
   resize: none;
   padding: 12px 16px;
+}
+
+.form-comment:focus{
+  border: 1px solid #2196f3;
+  outline: none;
 }
 
 .terms-of-use {
@@ -746,10 +741,22 @@ body {
   border-radius: 4px;
   background: #2f303a;
   margin-right: 12px;
+  padding-left: 16px;
+  color: #fff;
+}
+
+.footer-textfield:focus{
+  border: 1px solid #2196f3;
+  outline: none;
 }
 
 .form-textfield:focus{
   border: 1px solid #2196f3;
+  outline: none;
+}
+
+.form-textfield:focus + .form-textfield-icon{
+  fill:#2196f3;
 }
 
 .footer-form-btn {
